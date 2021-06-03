@@ -29,7 +29,9 @@ export const reducer = (state: State, action: Action): State => {
         age: action.value,
       };
     default:
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const _: never = action;
+      // eslint-disable-next-line no-throw-literal
       throw "error";
   }
 };
